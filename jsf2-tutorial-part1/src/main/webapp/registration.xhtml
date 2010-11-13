@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+	<ui:composition template="/decorator.xhtml">
+		<ui:define name="title">hasCode.com - Java Server Faces Tutorial - Registration</ui:define>
+		<ui:define name="body">
+			<h:form>
+	       		<div id="registration">
+	       			<label>Nickname</label>
+	       			<h:inputText label="Nickname" id="nname" value="#{userBean.nickname}" required="true"/>
+	       			<h:message for="nname"/>
+	       			<br/>
+	       			<label>E-Mail</label>
+	       			<h:inputText label="E-Mail" id="email" value="#{userBean.email}" required="true" validator="#{userBean.validateEmail}"/>
+	       			<h:message for="email"/>
+	       			<br/>
+	       			<label>Birthday</label>
+	       			<h:inputText label="Birthday" id="birthday" value="#{userBean.birthday}" required="true">
+						<f:convertDateTime pattern="yyy-MM-dd"/>
+					</h:inputText> (yyyy-mm-dd)
+					<h:message for="birthday"/><hr/>
+					<h:messages/>
+	       			<br/>
+	       			<h:commandButton action="success" value="Register" />
+	       		</div>
+       		</h:form>
+		</ui:define>
+	</ui:composition>
+</html>
