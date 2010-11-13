@@ -2,10 +2,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.hascode.jsf</groupId>
-	<artifactId>jsf2-tutorial</artifactId>
+	<artifactId>jsf2-primefaces-tutorial</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>hasCode.com -Java Server Faces 2 Maven Tutorial</name>
+	<name>hasCode.com -Java Server Faces 2 with PrimeFaces Tutorial</name>
 	<url>http://maven.apache.org</url>
 	<repositories>
 		<repository>
@@ -16,6 +16,12 @@
 		<repository>
 			<id>JBoss repository</id>
 			<url>http://repository.jboss.com/maven2/</url>
+		</repository>
+		<repository>
+			<id>prime-repo</id>
+			<name>Prime Technology Maven Repository</name>
+			<url>http://repository.prime.com.tr</url>
+			<layout>default</layout>
 		</repository>
 	</repositories>
 	<dependencies>
@@ -41,6 +47,11 @@
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.primefaces</groupId>
+			<artifactId>primefaces</artifactId>
+			<version>2.2.RC1</version>
 		</dependency>
 	</dependencies>
 	<build>
