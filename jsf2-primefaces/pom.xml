@@ -6,7 +6,7 @@
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>hasCode.com -Java Server Faces 2 with PrimeFaces Tutorial</name>
-	<url>http://maven.apache.org</url>
+	<url>http://www.hascode.com</url>
 	<repositories>
 		<repository>
 			<id>maven2-repository.dev.java.net</id>
