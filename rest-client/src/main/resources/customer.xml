@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<customer id="123">
+  <name>I R testuser</name>
+  <customer_email>test@hascode.com</customer_email>
+  <website>http://www.hascode.com</website>
+</customer>

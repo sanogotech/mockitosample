@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<customers>
+ <customer id="123">
+  <name>I R testuser</name>
+  <customer_email>test@hascode.com</customer_email>
+  <website>http://www.hascode.com</website>
+ </customer>
+ <customer id="456">
+  <name>Mee testuser too</name>
+  <customer_email>test2@hascode.com</customer_email>
+  <website>http://www.hascode.com/tag/jax-rs</website>
+ </customer>
+ <customer id="789">
+  <name>some developer</name>
+  <customer_email>test3@hascode.com</customer_email>
+  <website>http://www.hascode.com/about</website>
+ </customer>
+</customers>
