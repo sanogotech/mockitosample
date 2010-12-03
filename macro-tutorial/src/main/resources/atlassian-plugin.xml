@@ -1,0 +1,10 @@
+<atlassian-plugin key="${atlassian.plugin.key}" name="hasCode.com Macro Tutorial" pluginsVersion="2">
+ <resource type="i18n" name="i18n" location="com.hascode.confluence.macro.messages"/>
+ <plugin-info>
+ <description key="hascode.plugin.description"/>
+ <version>${project.version}</version>
+ <vendor name="hasCode.com" url="http://www.hascode.com"/>
+ </plugin-info>
+ 
+ <macro name="DemoSpacesMacro" key="hascode.plugin.macro.name" class="com.hascode.confluence.macro.SpacesMacro"/>
+</atlassian-plugin>

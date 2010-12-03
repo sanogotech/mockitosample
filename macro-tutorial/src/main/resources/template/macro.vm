@@ -1,0 +1,4 @@
+paces Macro<br/>
+#foreach ($space in $spaces)
+- $space.getName()<br/>
+#end

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<parent>
+		<groupId>com.atlassian.confluence.plugin.base</groupId>
+		<artifactId>confluence-plugin-base</artifactId>
+		<version>25</version>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.hascode.confluence</groupId>
+	<artifactId>macro-tutorial</artifactId>
+	<version>0.1</version>
+
+	<name>hasCode.com - Confluence Macro Tutorial</name>
+	<packaging>atlassian-plugin</packaging>
+
+	<properties>
+		<atlassian.plugin.key>com.hascode.confluence.macro-tutorial</atlassian.plugin.key>
+		<!-- Confluence version -->
+		<atlassian.product.version>2.9</atlassian.product.version>
+		<!-- Confluence plugin functional test library version -->
+		<atlassian.product.test-lib.version>1.4.1</atlassian.product.test-lib.version>
+		<!-- Confluence data version -->
+		<atlassian.product.data.version>2.9</atlassian.product.data.version>
+	</properties>
+	<repositories>
+		<repository>
+			<id>atlassian-public</id>
+			<url>https://maven.atlassian.com/repository/public</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</repository>
+		<repository>
+			<id>atlassian-m1-repository</id>
+			<url>https://maven.atlassian.com/maven1</url>
+			<layout>legacy</layout>
+		</repository>
+		<repository>
+			<id>atlassian-unknown</id>
+			<name>atlassian-unknown</name>
+			<url>http://repository.atlassian.com/</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>atlassian-public</id>
+			<url>https://maven.atlassian.com/repository/public</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.atlassian.confluence</groupId>
+			<artifactId>confluence</artifactId>
+			<version>${confluence.version}</version>
+			<scope>provided</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>seraph</groupId>
+					<artifactId>seraph</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+	</dependencies>
+</project>
