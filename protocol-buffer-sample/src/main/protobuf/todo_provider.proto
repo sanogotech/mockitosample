@@ -1,0 +1,19 @@
+package examples;
+
+option java_package = "com.hascode.examples.protocol_buffer";
+option java_outer_classname = "TodoProvider";
+
+message Todo {
+	required string title = 1;
+	enum Priority {
+		NORMAL = 1;
+		MEDIUM = 2;
+		HIGH = 3;
+	}
+	
+	optional Priority priority = 2;
+}
+
+message Todos {
+	repeated Todo todos = 1;
+}
