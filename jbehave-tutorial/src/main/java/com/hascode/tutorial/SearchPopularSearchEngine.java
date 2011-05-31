@@ -24,7 +24,7 @@ import com.thoughtworks.selenium.DefaultSelenium;
 import com.thoughtworks.selenium.Selenium;
 
 public class SearchPopularSearchEngine extends JUnitStories {
-	private final Selenium			selenium		= new DefaultSelenium("127.0.0.1", 4444, "*chrome", "http://www.google.de/");
+	private final Selenium			selenium		= new DefaultSelenium("127.0.0.1", 4444, "*chrome", "http://www.google.com/");
 	private final SeleniumContext	seleniumContext	= new SeleniumContext();
 
 	@Override
