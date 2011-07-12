@@ -1,0 +1,83 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.hascode.tutorial</groupId>
+	<artifactId>groovy-maven-tutorial</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>hasCode.com Groovy Maven Plugin Samples</name>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<!-- !!! Just uncomment the examples you want to test/execute !!! -->
+	<!--  EXAMPLE 1: Inline Script
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.gmaven</groupId>
+				<artifactId>gmaven-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>run-groovy</id>
+						<goals>
+							<goal>execute</goal>
+						</goals>
+						<phase>package</phase>
+						<configuration>
+							<source>
+								println "I am building version ${project.version} of ${project.name} at ${new Date()}"
+							</source>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+	 -->
+	 
+	<!-- EXAMPLE 2: Local Script
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.gmaven</groupId>
+				<artifactId>gmaven-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>run-groovy</id>
+						<goals>
+							<goal>execute</goal>
+						</goals>
+						<phase>package</phase>
+						<configuration>
+							<source>${pom.basedir}/src/main/script/example.groovy</source>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+	-->
+	
+	<!-- STEP3: Remote Script -->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.gmaven</groupId>
+				<artifactId>gmaven-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>run-groovy</id>
+						<goals>
+							<goal>execute</goal>
+						</goals>
+						<phase>package</phase>
+						<configuration>
+							<source>http://localhost/remote.groovy</source>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>
