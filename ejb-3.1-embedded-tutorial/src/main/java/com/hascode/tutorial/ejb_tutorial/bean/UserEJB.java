@@ -20,7 +20,7 @@ public class UserEJB {
 		anotherUser.setId(2l);
 
 		users.add(user);
-		users.add(user);
+		users.add(anotherUser);
 		return users;
 	}
 }
